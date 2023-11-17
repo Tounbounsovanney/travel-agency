@@ -22,4 +22,11 @@ class FrontPageController extends Controller
     public function contact(){
         return view('frontend.front_contact');
     }
+    public function destination(){
+        return view('frontend.front_destination');
+    }
+    public function booking(){
+        return view('frontend.front_booking');
+    }
+    
 }

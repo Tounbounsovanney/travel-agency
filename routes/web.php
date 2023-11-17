@@ -19,6 +19,8 @@ Route::get('/about',[FrontPageController::class,'about'])->name('front.about');
 Route::get('/service',[FrontPageController::class,'service'])->name('front.service');
 Route::get('/package',[FrontPageController::class,'packages'])->name('front.packages');
 Route::get('/contact',[FrontPageController::class,'contact'])->name('front.contact');
+Route::get('/destination',[FrontPageController::class,'destination'])->name('front.destination');
+Route::get('/booking',[FrontPageController::class,'booking'])->name('front.booking');
 
 
 
@@ -26,6 +28,7 @@ Route::get('/contact',[FrontPageController::class,'contact'])->name('front.conta
 
 
 
-Route::get('/Example',function(){
-    return "This is my first route";
-});
+
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
